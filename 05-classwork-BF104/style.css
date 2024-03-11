@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  padding: 30px;
+  position: fixed;
+  background-color: chartreuse;
+  z-index: 999999;
+}
+.sticky {
+  width: 100%;
+  height: 60px;
+  background-color: brown;
+  z-index: 9999999;
+  position: sticky;
+  top: 0px;
+  margin-top: 50px;
+}
+body {
+  height: 200vh;
+}
+.container {
+  width: 100%;
+  padding: 30px;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+}
+.container p {
+  margin-top: 20px;
+}
+.row {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 300px;
+  background-color: deeppink;
+}
+.card i {
+  position: absolute;
+  top: 60px;
+}
+.card p {
+  position: absolute;
+  top: 100px;
+}
+.card h5 {
+  position: absolute;
+  top: 90px;
+}
+.card button {
+  background-color: white;
+  border: none;
+  position: absolute;
+  bottom: 50px;
+}
+.up {
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+}
+.left {
+  position: absolute;
+  left: 20px;
+}
+.right {
+  position: absolute;
+  right: 20px;
+}
