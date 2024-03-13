@@ -1,1 +1,1 @@
-# classworks
+Bu Class workl'ər hər biri sinifdə verilən tapşırıqlara nəzərən yazılıb. 
