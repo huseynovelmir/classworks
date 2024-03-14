@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  border: 3px solid rgb(0, 0, 0);
+}
+.box {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.box1 {
+  background-color: aquamarine;
+}
+.box2 {
+  background-color: dodgerblue;
+}
+.box3 {
+  background-color: rgb(194, 12, 194);
+}
+.box4 {
+  background-color: rgb(119, 115, 115);
+}
+.box5 {
+  background-color: rgb(201, 201, 20);
+}
