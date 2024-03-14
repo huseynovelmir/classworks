@@ -1,33 +1,46 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 .container {
   width: 100%;
-  border: 3px solid rgb(0, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
+  display: flex;
 }
-.box {
-  width: 100%;
-  padding: 40px;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 500;
+.item {
+  padding: 20px;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.box1 {
-  background-color: aquamarine;
+.container .item:nth-child(1) {
+  background-color: cadetblue;
 }
-.box2 {
-  background-color: dodgerblue;
+.container .item:nth-child(2) {
+  background-color: blue;
 }
-.box3 {
-  background-color: rgb(194, 12, 194);
+.container .item:nth-child(3) {
+  background-color: purple;
 }
-.box4 {
-  background-color: rgb(119, 115, 115);
+.container .item:nth-child(4) {
+  background-color: darkgrey;
 }
-.box5 {
-  background-color: rgb(201, 201, 20);
+.container .item:nth-child(5) {
+  background-color: yellow;
+}
+.container .item:nth-child(6) {
+  background-color: orangered;
+}
+.container .item:nth-child(7) {
+  background-color: orange;
+}
+.container .item:nth-child(8) {
+  background-color: gainsboro;
+}
+.container .item:nth-child(9) {
+  background-color: greenyellow;
+}
+.container .item:nth-child(10) {
+  background-color: cyan;
 }

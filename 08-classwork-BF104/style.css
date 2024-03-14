@@ -1,25 +1,176 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
-.container {
-  width: 80%;
-  height: 600px;
-  background-color: antiquewhite;
-  margin: 0 auto;
-  margin-top: 150px;
-  padding: 40px;
+body {
+  background-color: black;
+  font-family: Roboto;
 }
-.headLine {
+header {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.first-area {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.headLine a {
+.first-area ul {
+  width: 50%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-area ul li a img {
+  width: 25px;
+  margin-right: 20px;
+}
+.first-area ul li a {
+  text-decoration: none;
+  color: white;
+}
+.right-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-area button {
+  padding: 15px 25px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 30px;
   display: flex;
   align-items: center;
-  color: black;
+}
+.right-area button i {
+  font-size: 20px;
+  color: orangered;
+  margin-right: 10px;
+}
+.buttons {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ctypes {
+  display: flex;
+}
+.ctypes a {
+  padding: 13px 30px;
+  background-color: #313131;
+  border-radius: 10px;
   text-decoration: none;
+  color: white;
+}
+.ctypes .private {
+  border: 1px solid orangered;
+  color: orangered;
+}
+.buttons .righta {
+  padding: 13px;
+  color: white;
+  text-decoration: none;
+  background-color: #313131;
+  border-radius: 5px;
+}
+.buttons .dwmode {
+  background-color: white;
+  color: #313131;
+}
+
+.second-area {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Medium.ttf");
+}
+.second-area li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.onlineServices {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  color: white;
+}
+.services {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+.services .box {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+.services .box:hover {
+  background-color: orangered;
+  color: white;
+}
+.services .box:hover i {
+  color: white;
+}
+.services .box h4 {
+  font-size: 20px;
+}
+.services .box i {
+  font-size: 40px;
+  color: orangered;
+}
+
+.services .box p {
+  margin-inline: 20px;
+}
+.weelchair {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: orangered;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  left: 10px;
+}
+.message {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: orangered;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 10px;
 }

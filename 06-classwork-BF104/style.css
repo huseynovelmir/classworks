@@ -2,91 +2,60 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
 }
-header {
+body {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 60px;
-  background-color: rgba(0, 0, 0, 0.248);
-  position: fixed;
-  z-index: 9999;
+  height: 200vh;
 }
-
-header a {
-  text-decoration: none;
-  color: #ffffff80;
-  font-size: 1.25rem;
-  font-weight: 700;
-  transition: 0.5s;
-}
-header a:hover {
-  color: white;
-}
-header ul {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
-}
-header ul li a {
-  font-size: 15px;
-  font-weight: 400;
-  transition: 0.5s;
-}
-header ul li:hover a {
-  color: white;
-}
-
-.main {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: url(./images/bg-masthead.jpg);
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+h1 {
   text-align: center;
+  margin-top: 100px;
 }
-.main .bg {
+.container {
+  width: 40%;
+  height: 400px;
+  background-color: antiquewhite;
+  border: 1px solid rgb(21, 255, 0);
+  margin: 0 auto;
+  margin-top: 250px;
+  position: relative;
+}
+.row {
+  width: 70px;
+  height: 70px;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.319);
 }
-.main h1 {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 6.5rem;
-  line-height: 6.5rem;
-  letter-spacing: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  z-index: 99999;
+.row-a {
+  background-color: red;
+  top: 30px;
+  left: 30px;
 }
-.main h2 {
-  margin-top: 20px;
-  color: #ffffff80;
-  z-index: 99999;
-  font-weight: 200;
+.row-b {
+  background-color: rgba(121, 59, 9, 0.459);
+  top: 50px;
+  left: 50px;
+  z-index: 9999999;
 }
-.main .btn {
-  padding: 1.25rem 2rem;
-  margin-top: 20px;
-  z-index: 999999999999999999;
-  background-color: #64a19d;
-  border: none;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1);
+.row-c {
+  background-color: rgb(206, 203, 10);
+  top: 70px;
+  left: 70px;
+}
+.row-d {
+  background-color: rgb(255, 96, 5);
+  position: sticky !important;
+  margin-left: 688px;
+  right: 0px;
+  top: 0px;
+}
+.row-e {
+  background-color: rgb(13, 255, 5);
+  bottom: 50px;
+  right: 200px;
+}
+.f {
+  background-color: dodgerblue;
+  position: fixed;
+  right: 0px;
+  top: 200px;
 }
