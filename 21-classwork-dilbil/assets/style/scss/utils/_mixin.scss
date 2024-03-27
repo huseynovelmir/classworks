@@ -1,0 +1,16 @@
+@mixin container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@mixin flex($justifyContent: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+@mixin button($padding: 16px 56px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $padding;
+}
