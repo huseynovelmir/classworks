@@ -84,15 +84,38 @@
 // console.log("cem:", b + c + d + e, "hasil", b * c * d * e);
 
 //! səkkiz
-let a = "50-70";
-let b = (a[0] + a[1]) * 1;
-let c = (a[3] + a[4]) * 1;
-if (b > c) {
+// let a = "50-70";
+// let b = (a[0] + a[1]) * 1;
+// let c = (a[3] + a[4]) * 1;
+// if (b > c) {
+//   b = b.toString();
+//   c = c.toString();
+//   console.log(`${b}-${c}`);
+// } else {
+//   b = b.toString();
+//   c = c.toString();
+//   console.log(`${c}-${b}`);
+// }
+
+//! doqquz
+let num = "13-11-12";
+let a = (num[0] + num[1]) * 1;
+let b = (num[3] + num[4]) * 1;
+let c = (num[6] + num[7]) * 1;
+
+if (c < a && a < b) {
+  a = a.toString();
   b = b.toString();
   c = c.toString();
-  console.log(`${b}-${c}`);
+  console.log(`${c}-${a}-${b}`);
+} else if (b < a && a < c) {
+  console.log(`${b}-${a}-${c}`);
+} else if (c < b && b < a) {
+  console.log(`${c}-${b}-${a}`);
+} else if (b < c && c < a) {
+  console.log(`${b}-${c}-${a}`);
+} else if (a < c && c < b) {
+  console.log(`${a}-${c}-${b}`);
 } else {
-  b = b.toString();
-  c = c.toString();
-  console.log(`${c}-${b}`);
+  console.log(`${a}-${b}-${c}`);
 }
