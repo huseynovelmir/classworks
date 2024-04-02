@@ -17,16 +17,25 @@
 // } else {
 //   console.log("deyil");
 // }
-//! ikinci
-let a = 3;
-let b = 4;
-let c = 5;
-if (
-  a * a + b * a >= c * a &&
-  a * a + c * a >= b * a &&
-  c * a + b * a >= a * a
-) {
-  console.log("üçbucaqdır");
+//! üçüncü
+// let a = 1;
+// let b = 2;
+// let c = 3;
+// if (
+//   a * a + b * b >= c * c ||
+//   a * a + c * c >= b * b ||
+//   c * c + b * b >= a * a
+// ) {
+//   console.log("üçbucaqdır");
+// } else {
+//   console.log("deyil");
+// }
+//! dördüncü
+
+let balance = 40;
+let pass = 50;
+if (balance > pass) {
+  console.log("welcome");
 } else {
-  console.log("deyil");
+  console.log("Bayıraaa");
 }
