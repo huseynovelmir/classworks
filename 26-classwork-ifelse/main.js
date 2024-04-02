@@ -1,9 +1,32 @@
-let a = 4;
+//! birinci
+// let a = 4;
+// let b = 10;
+// if (a > b) {
+//   console.log(a, "böyükdür", b);
+// } else if (b > a) {
+//   console.log(b, "böyükdür", a);
+// } else {
+//   console.log(b, "bərabərdir", a);
+// }
+//! ikinci
+// let a = 1;
+// let b = 1;
+// let c = 3;
+// if (a + b >= c && a + c >= b && c + b >= a) {
+//   console.log("üçbucaqdır");
+// } else {
+//   console.log("deyil");
+// }
+//! ikinci
+let a = 3;
 let b = 4;
-if (a > b) {
-  console.log(a, "böyükdür", b);
-} else if (b > a) {
-  console.log(b, "böyükdür", a);
+let c = 5;
+if (
+  a * a + b * a >= c * a &&
+  a * a + c * a >= b * a &&
+  c * a + b * a >= a * a
+) {
+  console.log("üçbucaqdır");
 } else {
-  console.log(b, "bərabərdir", a);
+  console.log("deyil");
 }
