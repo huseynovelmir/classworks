@@ -75,10 +75,24 @@
 //   console.log(balance + count);
 // }
 //! səkkiz
-let a = 1234;
-let b = parseInt(a / 1000);
-let c = parseInt((a % 100) / 10);
-let d = a % 10;
-let e = parseInt(a / 100) % 10;
+// let a = 1234;
+// let b = parseInt(a / 1000);
+// let c = parseInt((a % 100) / 10);
+// let d = a % 10;
+// let e = parseInt(a / 100) % 10;
 
-console.log("cem:", b + c + d + e, "hasil", b * c * d * e);
+// console.log("cem:", b + c + d + e, "hasil", b * c * d * e);
+
+//! səkkiz
+let a = "50-70";
+let b = (a[0] + a[1]) * 1;
+let c = (a[3] + a[4]) * 1;
+if (b > c) {
+  b = b.toString();
+  c = c.toString();
+  console.log(`${b}-${c}`);
+} else {
+  b = b.toString();
+  c = c.toString();
+  console.log(`${c}-${b}`);
+}
