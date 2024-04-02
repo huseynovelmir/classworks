@@ -39,11 +39,46 @@
 //   console.log("Bayıraaa");
 // }
 //! beşinci
-let balance = 140 / 100;
-let pass = 30 / 100;
-if (balance > pass) {
-  let count = balance - pass;
-  console.log("welcome your balance ", count.toFixed(1));
-} else {
-  console.log("Bayıraaa Balansda kifayət qədər vəsait yoxdu", balance);
-}
+// let balance = 140 / 100;
+// let pass = 30 / 100;
+// if (balance > pass) {
+//   let count = balance - pass;
+//   console.log("welcome your balance ", count.toFixed(1));
+// } else {
+//   console.log("Bayıraaa Balansda kifayət qədər vəsait yoxdu", balance);
+// }
+
+//! altıncı
+// let balance = 20 / 100;
+// let pass = 30 / 100;
+// if (balance > pass) {
+//   let count = balance - pass;
+//   console.log("welcome your balance ", count.toFixed(1));
+// } else {
+//   let count2 = pass - balance;
+//   console.log(
+//     " Balansda kifayət qədər vəsait yoxdu",
+//     count2.toFixed(1),
+//     "çatmır"
+//   );
+// }
+//! yeddinci
+// let balance = 10 / 100;
+// let pass = 30 / 100;
+// let opperatoin = 2;
+// if (balance > pass && opperatoin == 1) {
+//   let count = balance - pass;
+//   console.log("welcome your balance ", count.toFixed(1));
+// } else if (opperatoin == 2 && balance < pass) {
+//   let d = prompt("mebleğ daxil edin");
+//   let count = (d * 1) / 100;
+//   console.log(balance + count);
+// }
+//! səkkiz
+let a = 1234;
+let b = parseInt(a / 1000);
+let c = parseInt((a % 100) / 10);
+let d = a % 10;
+let e = parseInt(a / 100) % 10;
+
+console.log("cem:", b + c + d + e, "hasil", b * c * d * e);
