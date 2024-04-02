@@ -22,20 +22,28 @@
 // let b = 2;
 // let c = 3;
 // if (
-//   a * a + b * b >= c * c ||
-//   a * a + c * c >= b * b ||
-//   c * c + b * b >= a * a
+//   a * a + b * b = c * c ||
+//   a * a + c * c = b * b ||
+//   c * c + b * b = a * a
 // ) {
 //   console.log("üçbucaqdır");
 // } else {
 //   console.log("deyil");
 // }
 //! dördüncü
-
-let balance = 40;
-let pass = 50;
+// let balance = 40;
+// let pass = 50;
+// if (balance > pass) {
+//   console.log("welcome");
+// } else {
+//   console.log("Bayıraaa");
+// }
+//! beşinci
+let balance = 140 / 100;
+let pass = 30 / 100;
 if (balance > pass) {
-  console.log("welcome");
+  let count = balance - pass;
+  console.log("welcome your balance ", count.toFixed(1));
 } else {
-  console.log("Bayıraaa");
+  console.log("Bayıraaa Balansda kifayət qədər vəsait yoxdu", balance);
 }
