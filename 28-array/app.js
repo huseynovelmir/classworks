@@ -376,17 +376,17 @@ let students = [
 //   }
 // }
 //! yas
-let max = students[0].avgPoint;
-let box = "";
-for (let i = 0; i < students.length; i++) {
-  if (students[i].age == 20) {
-    for (let j = 0; j < students[i].teacher.length; j++) {
-      box += students[i].teacher[j].name + " ";
-    }
-    console.log(`ad: ${students[i].name} mualim: ${box}`);
-  }
-}
-
+// let max = students[0].avgPoint;
+// let box = "";
+// for (let i = 0; i < students.length; i++) {
+//   if (students[i].age == 20) {
+//     for (let j = 0; j < students[i].teacher.length; j++) {
+//       box += students[i].teacher[j].name + " ";
+//     }
+//     console.log(`ad: ${students[i].name} mualim: ${box}`);
+//   }
+// }
+// !boyfriend
 // for (let j = 0; j < students.length; j++) {
 //   if (students[j].loginDetail.password.length == max) {
 //     console.log(`ad: ${students[j].name} soyad: ${students[j].surname}`);
