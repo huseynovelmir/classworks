@@ -254,4 +254,59 @@ let students = [
   },
 ];
 
-students.forEach((element) => console.log(element));
+// students.forEach((element) => console.log(element));
+
+// let newStudents = [];
+// students.forEach((element, i) => {
+//   newStudents.push(element);
+// });
+// console.log(newStudents);
+
+// let newArr = students.map((element) => {
+//   return element.name;
+// });
+// console.log("newArr-", newArr);
+
+// let newStudents = [];
+// students.forEach((element) => {
+//   newStudents.push(element.name, element.age);
+// });
+// console.log(newStudents);
+
+// let newArr = students.map((element) => {
+//   if (element.age === 21) {
+//     return element;
+//   } else {
+//     return ;
+//   }
+// });
+
+// const newArr = students.filter((element) => element.avgPoint > 80);
+// console.log("newArr-", newArr);
+
+// const newArr = students.filter((element) => element.salaryAZN < 100);
+// console.log("newArr-", newArr);
+
+// const newArr = students.filter((element) => element.hobbies.length > 5);
+// console.log("newArr-", newArr);
+
+// const newArr = students
+//   .filter((element) => element.teacher.length < 4)
+//   .map((element2) => {
+//     return element2.name;
+//   });
+// console.log("newArr-", newArr);
+
+// const newArr = students
+//   .filter((element) => element.loginDetail.password.includes(1))
+//   .map((element2) => {
+//     return element2.name;
+//   });
+// console.log("newArr-", newArr);
+
+// let numbers = [5, -3, 8, -9, 2];
+// let result = 0;
+// numbers.forEach((elem) => {
+//   result += elem;
+// });
+// console.log(result);
