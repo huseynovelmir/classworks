@@ -254,68 +254,18 @@ let students = [
   },
 ];
 
-// students.forEach((element) => console.log(element));
-
-// let newStudents = [];
-// students.forEach((element, i) => {
-//   newStudents.push(element);
-// });
-// console.log(newStudents);
-
-// let newArr = students.map((element) => {
-//   return element.name;
-// });
-// console.log("newArr-", newArr);
-
-// let newStudents = [];
+// let newarr = [];
 // students.forEach((element) => {
-//   newStudents.push(element.name, element.age);
-// });
-// console.log(newStudents);
-
-// let newArr = students.map((element) => {
-//   if (element.age === 21) {
-//     return element;
-//   } else {
-//     return ;
-//   }
-// });
-
-// const newArr = students.filter((element) => element.avgPoint > 80);
-// console.log("newArr-", newArr);
-
-// const newArr = students.filter((element) => element.salaryAZN < 100);
-// console.log("newArr-", newArr);
-
-// const newArr = students.filter((element) => element.hobbies.length > 5);
-// console.log("newArr-", newArr);
-
-// const newArr = students
-//   .filter((element) => element.teacher.length < 4)
-//   .map((element2) => {
-//     return element2.name;
+//   let teacher = element.teacher;
+//   teacher.forEach((el) => {
+//     return newarr.push(el.name.charAt(0).toUpperCase() + el.name.slice(1));
 //   });
-// console.log("newArr-", newArr);
-
-// const newArr = students
-//   .filter((element) => element.loginDetail.password.includes(1))
-//   .map((element2) => {
-//     return element2.name;
-//   });
-// console.log("newArr-", newArr);
-
-// let numbers = [5, -3, 8, -9, 2];
-// let result = 0;
-// numbers.forEach((elem) => {
-//   result += elem;
 // });
-// console.log(result);
-// let newArr = students.reduce((acc, elem) => {
-//   acc.push(elem.name);
+// console.log("newARR:", newarr);
 
-//   return acc;
-// }, []);
-// console.log([newArr]);
-
-// const newArr = students.find((element) => (element.name = "Xanim"));
-// console.log("newArr-", newArr);
+students.forEach((element) => {
+  if (element.name.length != element.surname.length) {
+    let newsurnmae = element.surname.slice(0, element.name.length);
+    console.log("Ad:", element.name, "Soyad:", newsurnmae);
+  }
+});
