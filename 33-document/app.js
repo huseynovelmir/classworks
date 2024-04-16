@@ -25,6 +25,7 @@ arr.forEach((element) => {
   function myfunc() {
     if (element.nextElementSibling.style.display == "block") {
       element.nextElementSibling.style.display = "none";
+      element.
     } else {
       element.nextElementSibling.style.display = "block";
     }
