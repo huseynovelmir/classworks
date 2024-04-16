@@ -271,6 +271,10 @@ const basket = document.querySelector(".basket");
 const wishlist = document.querySelector(".wishlist");
 
 data.forEach((el) => {
+  createdcard(el, homep);
+});
+
+function createdcard(el, page) {
   const div = document.createElement("div");
   div.className = "card";
   const img = document.createElement("img");
@@ -290,6 +294,13 @@ data.forEach((el) => {
   btn2.innerText = "Wishlist";
   img.src = el.image;
   p.innerText = el.title;
+
+  btn.setAttribute("data", el.id);
+  // btn2.setAttribute("data", el.id);
+  btn.addEventListener("click", function (e) {
+    let el = api.find((el) => el.id == e.target.getAttribute("data"));
+    createdcard(el, basket);
+  });
   div.append(secdiv);
   secdiv.append(p);
   div.append(img);
@@ -297,16 +308,4 @@ data.forEach((el) => {
   div.append(btn2);
   homep.append(div);
   btn2.append(i);
-  btn.addEventListener("click", function () {
-    data.find((el) => {
-      if ((el.id = this.parentElement.id)) {
-        console.log(el);
-      }
-    });
-    //   basket.append(this.parentElement);
-  });
-});
-
-btn2.addEventListener("click", function () {
-  wishlist.append(this.parentElement);
-});
+}
