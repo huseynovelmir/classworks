@@ -590,20 +590,31 @@ data.forEach((elem) => {
 function createElement(elem, page) {
   const div = document.createElement("div");
   div.className = "card";
+
   const head = document.createElement("div");
   head.className = "header";
+
   const idp = document.createElement("p");
+
   const minus = document.createElement("button");
   minus.className = "btn btn-danger button";
   minus.innerText = "-";
+
   const plus = document.createElement("button");
   plus.className = "btn btn-primary button";
   plus.innerText = "+";
+
+  const count = document.createElement("p");
+  count.innerText = elem.count;
+
   const img = document.createElement("img");
   img.className = "card-img-top";
+
   const p = document.createElement("p");
   p.className = "card-text";
+
   const a = document.createElement("a");
+
   a.className = "btn btn-primary";
   img.src = elem.image;
   p.innerText = elem.title;
@@ -620,9 +631,12 @@ function createElement(elem, page) {
       createElement(elem, basket);
     });
   });
+  plus.addEventListener("click", function () {});
+  minus.addEventListener("click", function () {});
+
   page.append(div);
   div.append(head, img, p, a);
-  head.append(idp, minus, plus);
+  head.append(idp, minus, count, plus);
 }
 const deletebtn = document.querySelector(".del");
 deletebtn.addEventListener("click", function () {
