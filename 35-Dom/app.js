@@ -631,7 +631,9 @@ function createElement(elem, page) {
       createElement(elem, basket);
     });
   });
-  plus.addEventListener("click", function () {});
+  plus.addEventListener("click", function () {
+    console.log();
+  });
   minus.addEventListener("click", function () {});
 
   page.append(div);
