@@ -22,3 +22,16 @@ td {
     margin: 5px;
   }
 }
+.edit {
+  background-color: green;
+  color: white;
+}
+.modal {
+  position: fixed;
+  width: 34%;
+  height: 400px;
+  background-color: dodgerblue;
+  top: 150px;
+  margin: 0 auto;
+  z-index: 99999;
+}
