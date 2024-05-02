@@ -1,0 +1,13 @@
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.formBox * {
+  margin-top: 10px;
+}
+span {
+  color: red;
+}
