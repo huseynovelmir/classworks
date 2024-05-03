@@ -1,24 +1,6 @@
-import { useForm } from "react-hook-form";
-import axios from "axios";
-import { v4 as uuidv4 } from "uuid";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { RegisterSchema } from "../schema/RegisterSchema";
-export default function LoginRegister() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({ resolver: yupResolver(RegisterSchema) });
-
-  function onSubmit(value) {
-    let obj = {
-      id: uuidv4(),
-      username: value.username,
-      password: value.password,
-      basket: {},
-      favorite: {},
-    };
-    axios.post("http://localhost:3000/users", obj);
+export default function Login({ setLoginregister }) {
+  function change() {
+    setLoginregister(false);
   }
   return (
     <>
@@ -30,17 +12,12 @@ export default function LoginRegister() {
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Sign in to your account
+            Login your account
           </h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form
-            className="space-y-6"
-            action="#"
-            method="POST"
-            onSubmit={handleSubmit(onSubmit)}
-          >
+          <form className="space-y-6" action="#" method="POST">
             <div>
               <label
                 htmlFor="email"
@@ -54,15 +31,15 @@ export default function LoginRegister() {
                   name="email"
                   type="text"
                   autoComplete="email"
-                  {...register("username", {
-                    required: true,
-                    maxLength: 7,
-                    minLength: 3,
-                  })}
+                  //   {...register("username", {
+                  //     required: true,
+                  //     maxLength: 7,
+                  //     minLength: 3,
+                  //   })}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
-              {errors.username && <span>Id field is required</span>}
+              {/* {errors.username && <span>Id field is required</span>} */}
             </div>
 
             <div>
@@ -88,24 +65,30 @@ export default function LoginRegister() {
                   name="password"
                   type="password"
                   autoComplete="current-password"
-                  {...register("password", {
-                    required: true,
-                    maxLength: 7,
-                    minLength: 3,
-                  })}
+                  //   {...register("password", {
+                  //     required: true,
+                  //     maxLength: 7,
+                  //     minLength: 3,
+                  //   })}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
               {/* {errors.password && <span>Password field is required</span>} */}
 
-              {errors.password?.message}
+              {/* {errors.password?.message} */}
             </div>
 
             <div>
               <input
                 type="submit"
-                value="Submit"
+                value="Login"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              />
+              <input
+                onClick={change}
+                // type="submit"
+                value="Register"
+                className="flex mt-1 w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               />
             </div>
           </form>
