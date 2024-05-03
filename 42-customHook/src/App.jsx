@@ -1,21 +1,18 @@
-import Buttons from "./components/Buttons";
-import UseButton from "./hook/UseButton";
+import Form from "./components/Form";
 import UseFetch from "./hook/UseFetch";
 
 function App() {
-  const [hideWord, showWord, toggleWord, show] = UseButton();
-  const [data] = UseFetch("https://northwind.vercel.app/api/products");
+  const [data, loading, setLoading] = UseFetch(
+    "https://northwind.vercel.app/api/products"
+  );
   return (
     <>
-      <p>{show && "Saaaaallaaammm"}</p>
-      <Buttons
-        hideWord={hideWord}
-        showWord={showWord}
-        toggleWord={toggleWord}
-      />
-      {data.map((el) => (
-        <p key={el.id}>{el.name}</p>
-      ))}
+      <Form data={data} />
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        data.map((el) => <p key={el.id}>{el.name}</p>)
+      )}
     </>
   );
 }
