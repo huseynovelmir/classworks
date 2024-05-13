@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  padding: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.myBox {
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
