@@ -27,8 +27,8 @@ export const colorSlice = createSlice({
       } else {
         state.blueArr.push(actions.payload);
       }
-      state.data = [
-        ...state.data.filter((elem) => elem.id != actions.payload.id),
+      state.value = [
+        ...state.value.filter((elem) => elem.id != actions.payload.id),
       ];
     },
   },
